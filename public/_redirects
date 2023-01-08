@@ -1,1 +1,2 @@
-/test /
+/api/* https://saurabh-todo-backend.up.railway.app/:splat 200
+/* /index.html 200
