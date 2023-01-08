@@ -36,7 +36,7 @@ const CreateTodo = () => {
       tasks: [...createdTasks]
     }
 
-    const resp = await axios.post('/createtodo', data)
+    const resp = await axios.post('/api/createtodo', data)
 
     navigate('/')
 

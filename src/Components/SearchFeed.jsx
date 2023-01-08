@@ -14,7 +14,7 @@ const SearchFeed = ({todos, setTodos, searchTodos, setSearchTodos }) => {
         const newSearchTerm = searchTerm.slice(1)
         console.log(newSearchTerm);
 
-        const resp = await axios.get(`/search/${newSearchTerm}`)
+        const resp = await axios.get(`/api/search/${newSearchTerm}`)
     
         setTodos(resp.data.searchResults)
         // console.log(todos)

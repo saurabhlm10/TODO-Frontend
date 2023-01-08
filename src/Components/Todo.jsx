@@ -20,7 +20,7 @@ const Todo = () => {
     const fetchTodo = async () => {
         const newtodoId = todoId.slice(1)
 
-        const resp = await axios.get(`/gettodo/${newtodoId}`)
+        const resp = await axios.get(`/api/gettodo/${newtodoId}`)
 
         const data = resp.data.todo
 
@@ -44,7 +44,7 @@ const Todo = () => {
 
         setTodo(tempTodo)
 
-        const resp = axios.put(`/edittodo/${newtodoId}`, tempTodo)
+        const resp = axios.put(`/api/edittodo/${newtodoId}`, tempTodo)
 
         console.log(resp)
 
@@ -58,7 +58,7 @@ const Todo = () => {
         }
         setTodo(tempTodo)
 
-        const resp = await axios.put(`/edittodo/${newtodoId}`, tempTodo)
+        const resp = await axios.put(`/api/edittodo/${newtodoId}`, tempTodo)
 
         console.log(resp)
 
@@ -81,7 +81,7 @@ const Todo = () => {
 
         setTodo(tempTodo)
 
-        const resp = await axios.put(`/edittodo/${newtodoId}`, tempTodo)
+        const resp = await axios.put(`/api/edittodo/${newtodoId}`, tempTodo)
 
         console.log(resp)
         setIsTaskInEditMode(null)
@@ -101,7 +101,7 @@ const Todo = () => {
 
         setTodo(tempTodo)
 
-        const resp = await axios.put(`/edittodo/${newtodoId}`, tempTodo)
+        const resp = await axios.put(`/api/edittodo/${newtodoId}`, tempTodo)
 
         setAddATaskInputValue('')
         setShowAddATaskInput(false)

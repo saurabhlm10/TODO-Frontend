@@ -7,7 +7,7 @@ const Modal = ({isModalOpen, setIsModalOpen, newtodoId}) => {
     const navigate = useNavigate()
 
     const deleteTodo = async () => {
-        const resp = await axios.delete(`/deletetodo/${newtodoId}`) 
+        const resp = await axios.delete(`/api/deletetodo/${newtodoId}`) 
 
         console.log(resp);
         setIsModalOpen(false)
