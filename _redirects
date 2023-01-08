@@ -1,2 +1,2 @@
-https://warm-begonia-51a073.netlify.app/api/* https://saurabh-todo-backend.up.railway.app/:splat 200
+/api/gettodos https://saurabh-todo-backend.up.railway.app/gettodos 200
 /* /index.html 200
