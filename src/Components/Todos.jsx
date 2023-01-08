@@ -13,7 +13,7 @@ const Todos = ({ todos, setTodos, searchTodos, setSearchTodos }) => {
   const fetchTodos = async () => {
 
     // const resp = await axios.get('/api/gettodos')
-    const resp = await axios.get('https://saurabh-todo-backend.up.railway.app/gettodos')
+    const resp = await axios.get('/api/gettodos')
 
     const data = resp.data.todos
 
